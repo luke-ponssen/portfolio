@@ -1,0 +1,30 @@
+/* @import url("https://use.typekit.net/jmk3xov.css"); */
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  position: absolute;
+}
+
+section {
+  min-height: 100vh;
+  min-width: 99vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 36px;
+}
+
+h2 {
+  min-height: 300vh;
+}
