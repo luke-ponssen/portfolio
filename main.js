@@ -34,7 +34,7 @@ const torus = new THREE.Mesh(geometry, material);
 const donutTexture = new THREE.TextureLoader().load('./images/donut.jpg');
 const normalDonutTexture = new THREE.TextureLoader().load('./images/normal.jpg');
 const donut = new THREE.Mesh(
-  new THREE.TorusGeometry(3, 1.5, 1000),
+  new THREE.TorusGeometry(3, 2, 100, 100),
   new THREE.MeshStandardMaterial({map: donutTexture, normal: normalDonutTexture, color: 0x222222})
 );
 donut.position.x = 0;
@@ -96,6 +96,17 @@ proj5.position.x = -20;
 proj5.position.y = 0;
 proj5.position.z = 150;
 scene.add(proj5);
+
+// Add a project
+const proj6Texture = new THREE.TextureLoader().load('./images/3Dportfolio.jpg');
+const proj6 = new THREE.Mesh(
+  new THREE.BoxGeometry(20, 18, 0.1),
+  new THREE.MeshBasicMaterial({map: proj6Texture})
+);
+proj6.position.x = 20;
+proj6.position.y = 0;
+proj6.position.z = 180;
+scene.add(proj6);
 
 // Helpers
 // const lightHelper = new THREE.PointLightHelper(pointLight);
